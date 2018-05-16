@@ -1,0 +1,71 @@
+<html><head>
+<title>Movie night by MaXX sodalv0.1</title>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style2.css">
+<!-- <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  var OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "618e7f85-fbc4-4113-a6a0-f1ba624a8867",
+    });
+  });
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+  <div class="overlay"></div>
+  
+  <!-- Sidebar
+  <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+    <ul class="nav sidebar-nav">
+<iframe scrolling="no" id="chat_embed" src="http://www.twitch.tv/embed/sodapoppin/chat" width="100%" height="100%" frameborder="0">
+</iframe>
+    </ul>
+  </nav>-->
+  <!-- /#sidebar-wrapper --> 
+  
+  <!-- Page Content
+  <div id="page-content-wrapper">
+    <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas"> <span class="hamb-top"></span> <span class="hamb-middle"></span> <span class="hamb-bottom"></span> </button>
+   
+  
+</div> -->
+<iframe src="https://www.angelthump.com/embed/maxxzz" scrolling="no" style="float:left" allowfullscreen="" width="100%" height="100%" frameborder="0"></iframe>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script type="text/javascript" src="../src/iframeResizer.js"></script>
+		<script type="text/javascript">
+			iFrameResize({
+				log                     : true,          
+				enablePublicMethods     : true,                 
+				enableInPageLinks       : true,
+				resizedCallback         : function(messageData){ 
+					$('p#callback').html(
+						'<b>Frame ID:</b> '    + messageData.iframe.id +
+						' <b>Height:</b> '     + messageData.height +
+						' <b>Width:</b> '      + messageData.width +
+						' <b>Event type:</b> ' + messageData.type
+					);
+				},
+				messageCallback         : function(messageData){ 
+					$('p#callback').html(
+						'<b>Frame ID:</b> '    + messageData.iframe.id +
+						' <b>Message:</b> '    + messageData.message
+					);
+					alert(messageData.message + ' (' + messageData.iframe.id + ')' );
+				},
+				closedCallback         : function(id){ 
+					$('p#callback').html(
+						'<b>IFrame (</b>'    + id +
+						'<b>) removed from page.</b>'
+					);
+				}
+			});
+
+		</script>
+<!-- /#wrapper --> 
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> 
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
