@@ -19,6 +19,15 @@ body {
   transition: all 0.5s ease;
 }
 </style>
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  var OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "0267fcd5-703b-4bd0-a083-2bc3dad87f09",
+    });
+  });
+</script>
 </head>
 <!-- <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 <script>
