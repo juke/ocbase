@@ -1,68 +1,61 @@
-<html><head>
-<title>Offline Chat Movie Night</title>
-<link id="favicon" rel="shortcut icon" type="image/png" sizes="64x64" href="https://kek.gg/i/5JTQft.png">
-<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<style type="css">
-body {
-  overflow-y: hidden;
-  overflow-x: hidden;
-  margin: 0;
-  background-color: black;
-}
-#wrapper {
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  padding-left: 0;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-</style>
-<link rel="manifest" href="/manifest.json" />
-<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-<script>
-  var OneSignal = window.OneSignal || [];
-  OneSignal.push(function() {
-    OneSignal.init({
-      appId: "0267fcd5-703b-4bd0-a083-2bc3dad87f09",
-    });
-  });
-</script>
-</head>
-<!-- <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-<script>
-  var OneSignal = window.OneSignal || [];
-  OneSignal.push(function() {
-    OneSignal.init({
-      appId: "618e7f85-fbc4-4113-a6a0-f1ba624a8867",
-    });
-  });
-</script>
-</head>
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+         <div id="wrapper" class="toggled">
 
-<body>
-<div id="wrapper">
-  <div class="overlay"></div>
-  
- Sidebar
-  <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
-    <ul class="nav sidebar-nav">
-<iframe scrolling="no" id="chat_embed" src="http://www.twitch.tv/embed/sodapoppin/chat" width="100%" height="100%" frameborder="0">
-</iframe>
-    </ul>
-  </nav>-->
-  <!-- /#sidebar-wrapper --> 
-  
-  <!-- Page Content
-  <div id="page-content-wrapper">
-    <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas"> <span class="hamb-top"></span> <span class="hamb-middle"></span> <span class="hamb-bottom"></span> </button>
-   
-  
-</div> -->
-<iframe src="https://www.angelthump.com/embed/offlinechat" scrolling="no" style="float:left" allowfullscreen="" width="100%" height="100%" frameborder="0"></iframe>
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <iframe scrolling="no" id="chat_embed" src="https://www.twitch.tv/embed/nasabot/chat?darkpopout" width="100%" height="100%" frameborder="0"></iframe>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
 
-    </div>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
-     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid ">
+              <div class="row video">
+                <iframe src="https://www.angelthump.com/embed/offlinechat" id="video" scrolling="no" style="float:left" allowfullscreen="" width="100%" height="100%" frameborder="0"></iframe>
+              </div>
+
+              <div class="row content-b">
+                <div class="col-md-12">
+                  <a href="#chat-toggle" class="btn btn-secondary" id="chat-toggle">Toggle Chat</a>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+</div>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.6.1/iframeResizer.min.js"></script>
+            <script>
+    $("#chat-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
 </html>
